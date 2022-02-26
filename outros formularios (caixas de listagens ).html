@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Título</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <form name="cadastro" action="" method="post" accept-charset="UFT8">
+        <fieldset>
+            <legend>caixa de listagens(select)</legend>
+            <label for="tecno">selecione as linguagens para aprender : </label>
+            <select name="tecnologias " id="tecno" multiples size="1">
+                <option value="ADA">ADA</option>
+                <option value="c">c</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="php">php</option>
+                <option value="python" selected>python</option>
+                <option value="ruby">ruby</option>
+            </select>
+            </fildeset>
+            <br>
+            <fieldset>
+                <!--caixa de listagen com grupos diferentes -->
+                <legend>caixa de listagens(select)</legend>
+                <label for="tecno2">selecione as linguagens para aprender : </label>
+                <select name="tecnologias " id="tecno2" multiples size="2">
+                    <optgroup label="linguagens compiladas">
+                        <option value="ADA">ADA</option>
+                        <option value="c">c</option>
+                        <option value="C++">C++</option>
+                        <option value="Java">Java</option>
+                    </optgroup>
+                    <optgroup label="linguagens de script">
+                        <option value="php">php</option>
+                        <option value="python" selected>python</option>
+                        <option value="ruby">ruby</option>
+                    </optgroup>
+                </select>
+                </fildeset>
+                <br>
+                <!--calendario-->
+                <label for="data">data de nascimento</label>
+                <input type="date" id="data" name="dataNasc">
+                <br>
+                <!--relogio-->
+                <label for="hora">hora dos cadastro</label>
+                <input type="time" id=" hora" name="horaCadastro">
+                <br>
+                <!--colocar web site-->
+                <label for="site">cadastre seu website</label>
+                <input type="url" id="site" nome="siteUsuario" size="40">
+                <br>
+                <!--campo numerico com limites-->
+                <label for="num">nota do site de (1 a 10):</label>
+                <input type="number" id="num" name="nota" min="1" max="10">
+
+                <br>
+                <!-- controle datalist HTML5-->
+                <label for="elemento">escolha um elemento</label>
+                <input type="text" name="elementos" id="elemntos" list="elQuimicos">
+                <datalist id="elQuimicos">
+                    <option value="flúor"></option>
+                    <option value="mercúrio"></option>
+                    <option value="uranio"></option>
+                    <option value="ouro"></option>
+                    <br>
+
+
+
+
+                </datalist>
+
+
+
+
+
+
+
+
+                <br>
+
+                <!--botao submit(enviar)-->
+                <input type="submit" name="enviar" value="Enviar">
+                <br>
+                <!--botao restar-->
+                <input type="reset" name="reset" value="resetar">
+                <br>
+                <!--botao com clik alet que fala "bom dia "-->
+                <button type="button" onclick="alert('bom dia')">clique-me</button>
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>
